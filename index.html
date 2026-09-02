@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karsel Dawa — Software Developer</title>
+<meta name="description" content="Karsel Dawa — Software Developer. Portfolio, experience, and projects.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="nav-mark"><span class="dot"></span>Karsel Dawa</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+      </button>
+      <button class="nav-burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line class="icon-line l1" x1="3" y1="6" x2="21" y2="6"></line>
+          <line class="icon-line l2" x1="3" y1="12" x2="21" y2="12"></line>
+          <line class="icon-line l3" x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+  <a href="https://docs.google.com/document/d/1V8jrC7ImblOl_HTVI7dwFn1uhzrEpahD/export?format=pdf" rel="noopener" target="_blank" data-cv-link class="mm-cta">Download CV</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-bg">
+    <div class="mesh"></div>
+    <svg viewBox="0 0 500 800" preserveAspectRatio="none">
+      <line class="grid-line" x1="0" y1="120" x2="500" y2="120"/>
+      <line class="grid-line" x1="0" y1="320" x2="500" y2="320"/>
+      <line class="grid-line" x1="0" y1="520" x2="500" y2="520"/>
+      <line class="grid-line" x1="150" y1="0" x2="150" y2="800"/>
+      <line class="grid-line" x1="350" y1="0" x2="350" y2="800"/>
+      <circle class="grid-node" cx="150" cy="120" r="3"/>
+      <circle class="grid-node" cx="350" cy="320" r="3"/>
+      <circle class="grid-node" cx="150" cy="520" r="3"/>
+      <g class="float-shape">
+        <rect x="60" y="180" width="34" height="34" fill="none" stroke="var(--accent)" stroke-opacity="0.35" transform="rotate(12 77 197)"/>
+      </g>
+      <g class="float-shape s2">
+        <circle cx="390" cy="470" r="20" fill="none" stroke="var(--accent)" stroke-opacity="0.3"/>
+      </g>
+      <g class="float-shape s3">
+        <polygon points="230,600 250,635 210,635" fill="none" stroke="var(--accent)" stroke-opacity="0.3"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-eyebrow"><span class="pulse"></span>Open to graduate, internship &amp; software engineering roles in Perth &amp; remote</div>
+
+    <h1 id="heroName"></h1>
+
+    <p class="hero-role"><span id="heroRoleText"></span><span class="caret"></span></p>
+
+    <p class="hero-sub">I take software from ambiguous requirements to production — architecting for scale, writing code that holds up under review, and leading Agile teams as a SCRUM Master to get it there. Currently sharpening that with a Master of Information Technology at UWA.</p>
+
+    <div class="hero-meta">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Perth, Western Australia</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>MIT Candidate, UWA</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Former SCRUM Master</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="https://docs.google.com/document/d/1V8jrC7ImblOl_HTVI7dwFn1uhzrEpahD/export?format=pdf" rel="noopener" target="_blank" data-cv-link class="btn btn-primary">Download CV
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+      </a>
+      <a href="#experience" class="btn btn-ghost">View experience
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span class="line"></span>Scroll</div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num"><span class="rule"></span>About</div>
+      <h2>Grounded in engineering, sharpened by delivery</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a software developer with a foundation in <strong>programming languages, machine learning, and Agile delivery</strong>. Over two years at Developer Tools Private Limited, I worked across the full lifecycle of software products — from requirements gathering through architecture, development, and deployment — while running SCRUM ceremonies as the team's SCRUM master.</p>
+        <p>My academic path started with a Bachelor of Engineering in Information Technology at the Royal University of Bhutan, where I researched fine-tuning LLMs as part of a GovTech internship and won the college's Annual Student Research Meet for a paper on AI-based animal intrusion detection. I'm currently completing a <strong>Master of Information Technology at the University of Western Australia</strong> in Perth.</p>
+        <p>I care about writing software that's built to last — clean architecture, thoughtful code review, and solutions that scale — and about the team culture around it: knowledge sharing, mentoring, and steady, well-run sprints.</p>
+
+        <div class="about-highlights reveal-stagger">
+          <div class="cell"><div class="num">2+ yrs</div><div class="lbl">Professional software development</div></div>
+          <div class="cell"><div class="num">7</div><div class="lbl">Independent &amp; team projects shipped</div></div>
+          <div class="cell"><div class="num">5</div><div class="lbl">Academic &amp; competition awards</div></div>
+          <div class="cell"><div class="num">1</div><div class="lbl">Published research paper</div></div>
+        </div>
+      </div>
+
+      <div class="about-side reveal">
+        <h3>Core strengths</h3>
+        <div class="tag-cloud">
+          <span class="tag">Software Architecture</span>
+          <span class="tag">SCRUM / Agile</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Mobile Development</span>
+          <span class="tag">Web Development</span>
+          <span class="tag">Code Review</span>
+          <span class="tag">UI/UX Design</span>
+          <span class="tag">Team Leadership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" style="background:var(--bg-raise);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num"><span class="rule"></span>Experience</div>
+      <h2>Career timeline</h2>
+      <p>My software development background, plus the casual roles I've taken on while relocating to and settling in Perth.</p>
+    </div>
+
+    <div class="exp-subhead reveal"><h3>Professional Experience</h3><span class="rule"></span></div>
+
+    <div class="timeline" id="timeline">
+      <div class="timeline-progress" id="tlProgress"></div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">Jul 2024 — Jun 2026</div>
+        <div class="tl-role">Software Developer</div>
+        <div class="tl-org">Developer Tools Private Limited, Thimphu, Bhutan</div>
+        <ul class="tl-bullets">
+          <li>Collaborated with cross-functional teams to design, develop, and maintain software applications for ComponentOne.</li>
+          <li>Owned the full lifecycle of software products, from requirements gathering to deployment and maintenance.</li>
+          <li>Formulated effective solutions for complex problems and applied relevant design patterns.</li>
+          <li>Developed and implemented software architecture that ensured scalability and performance.</li>
+          <li>Reviewed code and identified areas for improvement to enhance code quality.</li>
+          <li>Supervised SCRUM meetings as SCRUM master to enhance workflow and achieve company goals.</li>
+        </ul>
+        <span class="tl-tag">Full-time · SCRUM Master</span>
+      </div>
+    </div>
+
+    <div class="casual-block reveal">
+      <div class="exp-subhead"><h3>Casual Work — Perth, WA</h3><span class="rule"></span></div>
+      <div class="casual-grid reveal-stagger">
+        <div class="casual-card">
+          <div class="casual-period">Jul 2026 — Aug 2026</div>
+          <div class="casual-role">Barback &amp; Bartender</div>
+          <div class="casual-org">TikiAsFK, Northbridge, WA</div>
+          <ul class="casual-bullets">
+            <li>Mixed and served drinks to high-volume guests during fast-paced shifts, handling cash/POS transactions accurately.</li>
+            <li>Restocked liquor, garnishes, glassware and ice; assisted with keg changes and equipment upkeep.</li>
+            <li>Resolved customer issues professionally while ensuring compliance with responsible service of alcohol regulations.</li>
+          </ul>
+        </div>
+        <div class="casual-card">
+          <div class="casual-period">Jul 2026 — Aug 2026</div>
+          <div class="casual-role">DoorDasher</div>
+          <div class="casual-org">Western Australia</div>
+          <ul class="casual-bullets">
+            <li>Delivered food orders accurately and on time, managing multiple orders in fast-paced, time-sensitive conditions.</li>
+            <li>Used route-planning and time-management skills to meet delivery deadlines while following food safety guidelines.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num"><span class="rule"></span>Projects</div>
+      <h2>Independent &amp; collaborative builds</h2>
+      <p>Selected projects spanning AI/IoT, mobile, and web development from my academic and personal work.</p>
+    </div>
+
+    <div class="proj-grid reveal-stagger">
+
+      <div class="proj-card">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v2a5 5 0 0 0 5 5 5 5 0 0 0 5-5V7a5 5 0 0 0-5-5z"></path><path d="M8 14v2a4 4 0 0 0 8 0v-2"></path><line x1="12" y1="21" x2="12" y2="18"></line></svg></div>
+        <h3>Animal Intrusion Detection System</h3>
+        <p>Final year project using AIOT (AI + IoT) technology to detect and reduce human-wildlife conflict — later published as a research paper and winner of the college's Annual Student Research Meet 2024.</p>
+        <div class="proj-tags"><span>AIOT</span><span>Machine Learning</span><span>Research</span></div>
+        <span class="proj-link">Final Year Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.9V17L12 22l-9-4.9V6.9L12 2z"></path><path d="M12 12l9-5"></path><path d="M12 12v10"></path><path d="M12 12L3 7"></path></svg></div>
+        <h3>LLM Fine-Tuning Research</h3>
+        <p>Three-month research internship with GovTech (Dec 2023 – Mar 2024) focused on fine-tuning large language models.</p>
+        <div class="proj-tags"><span>LLMs</span><span>Research Internship</span><span>GovTech</span></div>
+        <span class="proj-link">Research Internship
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </span>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"></rect><line x1="11" y1="18" x2="13" y2="18"></line></svg></div>
+        <h3>College Food Court App</h3>
+        <p>Group project digitizing the college's food court ordering experience, built collaboratively using Android Studio.</p>
+        <div class="proj-tags"><span>Android Studio</span><span>Java</span><span>Team Project</span></div>
+        <a class="proj-link" href="https://github.com/Karsel123/CSTg4" target="_blank" rel="noopener">View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div>
+        <h3>Bhutanese Sign Recognition System</h3>
+        <p>A sign language detection system built to recognise Bhutanese sign language gestures.</p>
+        <div class="proj-tags"><span>Computer Vision</span><span>Machine Learning</span></div>
+        <a class="proj-link" href="https://github.com/Karsel123/BSL-Ya-ta-and-La-ta" target="_blank" rel="noopener">View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="M4 9h16"></path><path d="M9 4v16"></path></svg></div>
+        <h3>CST Website Redesign</h3>
+        <p>Collaborated on redesigning the college website with a modern component-driven stack and headless CMS.</p>
+        <div class="proj-tags"><span>React</span><span>Tailwind CSS</span><span>DaisyUI</span><span>Strapi</span></div>
+        <a class="proj-link" href="https://github.com/divyashC/cst-website-redesign" target="_blank" rel="noopener">View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></div>
+        <h3>DrukZakar App Clone</h3>
+        <p>Designed and built a clone of the DrukZakar app using Android Studio with Java and XML layouts.</p>
+        <div class="proj-tags"><span>Android Studio</span><span>Java</span><span>XML</span></div>
+        <a class="proj-link" href="https://github.com/Karsel123/Druk_Zakar" target="_blank" rel="noopener">View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></div>
+        <h3>E-commerce Website</h3>
+        <p>A simple e-commerce site where clients can browse products, add items to a cart, and complete purchases.</p>
+        <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a class="proj-link" href="https://github.com/Karsel123/e-commerce-website" target="_blank" rel="noopener">View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" style="background:var(--bg-raise);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num"><span class="rule"></span>Skills</div>
+      <h2>Technical &amp; working skills</h2>
+      <p>Grouped by how they show up in my work — no proficiency scores are shown here, since the source CV lists skills rather than rated levels.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="reveal">
+        <div class="skill-cat-head">
+          <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+          <h3>Languages &amp; Development</h3>
+        </div>
+        <div class="skill-chip-list reveal-stagger">
+          <div class="skill-chip">Java</div>
+          <div class="skill-chip">Python</div>
+          <div class="skill-chip">JavaScript</div>
+          <div class="skill-chip">C / C#</div>
+          <div class="skill-chip">HTML &amp; CSS</div>
+          <div class="skill-chip">.NET &amp; NuGet</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="skill-cat-head">
+          <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
+          <h3>Disciplines &amp; Tools</h3>
+        </div>
+        <div class="skill-chip-list reveal-stagger">
+          <div class="skill-chip">Artificial Intelligence</div>
+          <div class="skill-chip">Machine Learning</div>
+          <div class="skill-chip">Mobile App Development</div>
+          <div class="skill-chip">Web Development</div>
+          <div class="skill-chip">UI &amp; UX Design</div>
+          <div class="skill-chip">Git, SourceTree &amp; BitBucket</div>
+          <div class="skill-chip">SCRUM / Agile</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="skill-cat-head">
+          <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 1 0-16 0"></path></svg></div>
+          <h3>Working Style</h3>
+        </div>
+        <div class="skill-chip-list reveal-stagger">
+          <div class="skill-chip">Leadership</div>
+          <div class="skill-chip">Integrity &amp; Honesty</div>
+          <div class="skill-chip">Proactive Approach</div>
+          <div class="skill-chip">Perseverance</div>
+          <div class="skill-chip">Stress Management</div>
+          <div class="skill-chip">Trustworthiness</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION / CERTS / RESEARCH ============ -->
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num"><span class="rule"></span>Education &amp; Research</div>
+      <h2>Academic background</h2>
+    </div>
+
+    <div class="edu-grid">
+      <div class="reveal">
+        <div class="edu-card">
+          <div class="edu-degree">Master of Information Technology</div>
+          <div class="edu-school">The University of Western Australia, Perth</div>
+          <div class="edu-period">Jul 2026 — Present</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree">Bachelor of Engineering, Information Technology</div>
+          <div class="edu-school">College of Science and Technology, Royal University of Bhutan, Chukha</div>
+          <div class="edu-period">Jul 2020 — Jun 2024</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree">BHSEC — Science</div>
+          <div class="edu-school">Ugyen Academy, Punakha, Bhutan</div>
+          <div class="edu-period">2019</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree">BCSE — Information Technology</div>
+          <div class="edu-school">Yangchenphug Higher Secondary School, Thimphu, Bhutan</div>
+          <div class="edu-period">2016</div>
+        </div>
+
+        <div class="subblock">
+          <h4>Publication</h4>
+          <div class="pub-card">
+            <div class="label">Research Paper, 2025</div>
+            <div class="title">AI-based Animal Intrusion Detection System for Human-Wildlife Conflicts in Bhutan</div>
+            <div class="cite">Dorji, T., Lhaden, P., Phuentsho, T., Tshomo, Y., &amp; Dawa, K. (2025). Zorig Melong, 8(1), 46–52. <a href="https://doi.org/10.17102/zmv8.i1.007" target="_blank" rel="noopener">doi.org/10.17102/zmv8.i1.007</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h4 style="font-size:14px;color:var(--text-faint);font-weight:600;margin-bottom:12px;">Selected certifications &amp; training</h4>
+        <div class="cert-list">
+          <div class="cert-item"><div><div class="name">Foundational C# with Microsoft</div><div class="issuer">freeCodeCamp</div></div><div class="date">Jul 2024</div></div>
+          <div class="cert-item"><div><div class="name">The Complete 2024 Web Development Bootcamp</div><div class="issuer">Udemy</div></div><div class="date">May 2024</div></div>
+          <div class="cert-item"><div><div class="name">The Data Science Course: Complete Bootcamp</div><div class="issuer">Udemy</div></div><div class="date">Dec 2023</div></div>
+          <div class="cert-item"><div><div class="name">Web Scraping in Python — BeautifulSoup, Selenium &amp; Scrapy</div><div class="issuer">Udemy</div></div><div class="date">Dec 2023</div></div>
+          <div class="cert-item"><div><div class="name">Cybersecurity Fundamentals</div><div class="issuer">APNIC Academy</div></div><div class="date">Oct 2023</div></div>
+          <div class="cert-item"><div><div class="name">Red Hat System Administration I &amp; II (RH124 / RH134)</div><div class="issuer">Red Hat</div></div><div class="date">—</div></div>
+          <div class="cert-item"><div><div class="name">RSA Online — SITHFAB021, Wine, Beer, Cocktails &amp; Spirits, Barista for Beginners</div><div class="issuer">ClearToWork</div></div><div class="date">Aug 2026</div></div>
+        </div>
+
+        <div class="subblock">
+          <h4>Awards &amp; recognition</h4>
+          <div class="award-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"></path><path d="M17 4h3a2 2 0 0 1-2 4h-1M7 4H4a2 2 0 0 0 2 4h1"></path></svg>
+            <div><div class="t">Winner, Annual Student Research Meet (SRM 2024) — "Animal Intrusion Detection System"</div><div class="d">College of Science and Technology · May 2024</div></div>
+          </div>
+          <div class="award-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"></path><path d="M17 4h3a2 2 0 0 1-2 4h-1M7 4H4a2 2 0 0 0 2 4h1"></path></svg>
+            <div><div class="t">Runner-up, Inter-collegiate Programming Contest</div><div class="d">RUB ACM Chapter · May 2023</div></div>
+          </div>
+          <div class="award-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"></path><path d="M17 4h3a2 2 0 0 1-2 4h-1M7 4H4a2 2 0 0 0 2 4h1"></path></svg>
+            <div><div class="t">3rd Place, Makeathon — CST Tech Incubation Centre &amp; FabLab</div><div class="d">Oct 2022</div></div>
+          </div>
+          <div class="award-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"></path><path d="M17 4h3a2 2 0 0 1-2 4h-1M7 4H4a2 2 0 0 0 2 4h1"></path></svg>
+            <div><div class="t">3rd Place, Tech-Talk Contest — RUB ACM Student Chapter</div><div class="d">Oct 2022</div></div>
+          </div>
+          <div class="award-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"></path><path d="M17 4h3a2 2 0 0 1-2 4h-1M7 4H4a2 2 0 0 0 2 4h1"></path></svg>
+            <div><div class="t">Winner, Business Idea Competition — CST Tech Incubation Center</div><div class="d">Aug 2022</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-inner reveal">
+      <div class="contact-left">
+        <h2>Let's build something reliable together.</h2>
+        <p>Open to graduate, internship and software engineering roles in Perth and remote. Reach out directly — I reply personally.</p>
+        <a href="https://docs.google.com/document/d/1V8jrC7ImblOl_HTVI7dwFn1uhzrEpahD/export?format=pdf" rel="noopener" target="_blank" data-cv-link class="btn btn-primary" style="margin-top:22px;position:relative;">Download CV
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        </a>
+      </div>
+
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:karseldawarai@gmail.com">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg></div>
+          <div><div class="lbl">Email</div><div class="val">karseldawarai@gmail.com</div></div>
+        </a>
+        <a class="contact-link" href="tel:+61400456559">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+          <div><div class="lbl">Phone</div><div class="val">+61 400 456 559</div></div>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/karsel-dawa-5b506b2a3/" target="_blank" rel="noopener">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div>
+          <div><div class="lbl">LinkedIn</div><div class="val">/in/karsel-dawa-5b506b2a3</div></div>
+        </a>
+        <a class="contact-link" href="https://github.com/Karsel123" target="_blank" rel="noopener">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></div>
+          <div><div class="lbl">GitHub</div><div class="val">github.com/Karsel123</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="year"></span> Karsel Dawa. Built with intention.</p>
+    <a href="#top" class="back-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
