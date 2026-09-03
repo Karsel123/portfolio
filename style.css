@@ -216,7 +216,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   border:1px solid var(--border);padding:7px 14px 7px 10px;border-radius:20px;
   opacity:0;animation:fadeUp .7s var(--ease) .1s forwards;
 }
-.hero-eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);position:relative;}
+.hero-eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:#22c55e;position:relative;}
 .hero-eyebrow .pulse::after{
   content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--accent);
   animation:pulseRing 2.2s ease-out infinite;
